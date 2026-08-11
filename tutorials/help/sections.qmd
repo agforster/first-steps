@@ -11,7 +11,8 @@ library(printr)
 
 R help files can contain diverse information: some are only a few lines long while others contain dozens of pages of 
 information. Not all R help files include all possible sections, but there are a few core sections that tend to show up
-pretty consistently due to their general usefulness.
+pretty consistently due to their general usefulness. Below, we'll walk through those sections using the documentation
+for the `arrange()` function (from the **dplyr** package) as a concrete example.
 
 ## Description 
 
@@ -108,3 +109,11 @@ arrange(mtcars, cyl, disp)
 ::::
 
 :::
+
+## Quick Check
+
+Which section would you check to find...
+
+- ...a function's default argument values?
+- ...a short, plain-language summary of what a function does?
+- ...working example code you can copy and adapt?

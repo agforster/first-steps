@@ -2,17 +2,25 @@
 title: "Basic Commands"
 ---
 
-At it's most purely distilled level, all the R programming and data analysis that you will ever do reduces to evaluating
-sequences of expressions. Viewed through one more layer of abstraction, the purpose of these expressions will be to
-implement some aspect of just two tasks:
+Everything you will ever do in R comes down to two basic tasks: creating a new R object, and processing an existing R
+object. That might sound abstract right now, but it will feel completely concrete by the end of this tutorial.
 
-1. Create a new R object
-1. Process an existing R object
+Rather than explaining all the theory up front, this tutorial builds your understanding gradually, one small step at a time, using the same repeating cycle throughout:
 
-That's it: everything you will ever do with R can be conceptualized as some combination of those two tasks. Of course,
-I'm being intentionally pedantic. Although, the statement above is technically true, the practical complexity that can 
-arise from programmatically creating and processing abstract objects is virtually limitless.
+1. **Do** — run a short piece of R code.
+1. **See** — observe exactly what R outputs.
+1. **Predict** — guess what the *next* piece of code will do before running it.
+1. **Explain** — describe, in your own words, *why* R behaved that way.
 
-In this tutorial, we'll begin at the beginning by introducing the basic building blocks of all your future R analyses.
-We start by covering the most fundamental commands in the R programming language: the core set of commands from which
-originates all the myriad complexity R has to offer.
+We'll work through the following topics, roughly in order of increasing complexity:
+
+1. [Fundamental Interactions](/tutorials/basic_commands/fundamentals.qmd) — using R as a calculator
+1. [Basic Operators](/tutorials/basic_commands/basic_operators.qmd) — arithmetic on named objects
+1. [Order of Operations](/tutorials/basic_commands/order_of_operations.qmd) — how R decides what to compute first
+1. [Extended Operators](/tutorials/basic_commands/extended_operators.qmd) — powers, roots, and other useful functions
+1. [Objects](/tutorials/basic_commands/objects.qmd) — creating and storing values with `<-`
+1. [Logical Comparisons](/tutorials/basic_commands/logical_comparisons.qmd) — asking R `TRUE`/`FALSE` questions
+1. [Comments](/tutorials/basic_commands/comments.qmd) — leaving notes in your code
+1. [Environments](/tutorials/basic_commands/environments.qmd) *(optional)* — where R keeps your objects
+
+By the end, you'll be able to run calculations, interpret R's output, and write your own simple expressions. This is the foundation everything else in this module builds on.

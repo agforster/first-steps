@@ -1,0 +1,104 @@
+---
+title: "Try It"
+---
+
+Reading about functions only gets you so far. The fastest way to really understand them is to call a lot of them and
+watch what happens. This page is entirely hands-on.
+
+## Calling Your First Functions
+
+**Do:** run each of the following function calls one at a time. For each one, pause and **see** what it prints before
+moving to the next line.
+
+```{webr-r}
+sum(1:10)
+```
+
+```{webr-r}
+max(c(3, 7, 2, 9, 4))
+```
+
+```{webr-r}
+min(c(3, 7, 2, 9, 4))
+```
+
+```{webr-r}
+length(c(3, 7, 2, 9, 4))
+```
+
+::: practice
+
+## Practice: Change the Input
+
+Now it's your turn. In the editor below, call `sum()`, `mean()`, and `length()` on the vector `c(10, 20, 30, 40, 50)`.
+
+:::: {.panel-tabset}
+## {{< var tab_title.editor >}}
+
+```{webr-r}
+```
+
+## {{< var tab_title.solution >}}
+
+```{r}
+sum(c(10, 20, 30, 40, 50))
+mean(c(10, 20, 30, 40, 50))
+length(c(10, 20, 30, 40, 50))
+```
+::::
+
+:::
+
+## Same Function, Different Input
+
+One of the most important habits to build is *changing the input* to a function you already know, just to see what
+happens. This is one of the best ways to build intuition for how a function behaves.
+
+::: practice
+
+## Practice: Predict, Then Run
+
+Predict what each of the following will print, *before* running the code. Each line calls the same function,
+`round()`, with a different input.
+
+```{r, eval = FALSE}
+round(3.14159)
+round(3.14159, 2)
+round(7)
+round(-2.5)
+```
+
+:::: {.panel-tabset}
+## {{< var tab_title.editor >}}
+
+```{webr-r}
+round(3.14159)
+round(3.14159, 2)
+round(7)
+round(-2.5)
+```
+
+## {{< var tab_title.solution >}}
+
+```{r}
+round(3.14159)
+round(3.14159, 2)
+round(7)
+round(-2.5)
+```
+
+Changing the first input changes *what* gets rounded, while changing the second input (when we provide one) changes
+*how precisely* it gets rounded. Notice that `round(7)` still works even though `7` is already a whole number. R
+doesn't complain, it just returns `7`. We'll formally introduce these "extra" inputs, called **arguments**, on the
+next page.
+::::
+
+:::
+
+## Quick Check
+
+Using the editor below, call `sqrt()` on three *different* numbers of your choosing. What pattern do you notice about
+how the output changes as your input changes?
+
+```{webr-r}
+```

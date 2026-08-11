@@ -6,6 +6,8 @@ webr:
   autoload-packages: false
 ---
 
+## How to Open a Help File
+
 The simplest way to access a function's help file is to prepend the function name (without parentheses) with the `?`
 character. The following code will pull up the documentation for the `lm()` function.
 
@@ -93,5 +95,13 @@ library(printr)
 ::::
 
 :::
+
+## Quick Check
+
+- What are the two ways to open a function's help file?
+- If you get an error opening a help file with `?some_function`, what's the most likely reason?
+
+```{webr-r}
+```
 
 <!--------------------------------------------------------------------------------------------------------------------->

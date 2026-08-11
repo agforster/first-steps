@@ -1,0 +1,29 @@
+Question
+========
+Which of the following function calls will correctly round the value `9.8765` to 2 decimal places?
+
+Answerlist
+----------
+* `round(9.8765, 2)`
+* `round(x = 9.8765, digits = 2)`
+* `round(digits = 2, x = 9.8765)`
+* `round(2, 9.8765)`
+* `round(9.8765, digit = 2)`
+
+Solution
+========
+
+Answerlist
+----------
+* Correct: the arguments are supplied in the order `round()` expects (`x`, then `digits`), so no names are needed.
+* Correct: both arguments are named, so their order doesn't matter.
+* Correct: both arguments are named, so their order doesn't matter, even though it differs from the previous answer.
+* Incorrect: without argument names, R matches by position — the first value fills `x` and the second fills `digits`. This call rounds `2` (interpreted as `x`) to `9.8765` decimal places, which is a nonsensical number of digits, not the intended calculation.
+* Incorrect: `round()` expects an argument named `digits`, not `digit`. R will not recognize this argument name.
+
+Meta-information
+================
+exname: Arguments and Order
+extype: mchoice
+exsolution: 11100
+exshuffle: TRUE

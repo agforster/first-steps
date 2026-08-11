@@ -2,21 +2,76 @@
 title: "R Functions"
 ---
 
-Essentially all of your R-based analyses will revolved around calling *functions* to manipulate the contents of *objects*
-stored in the environment and saving those modified objects as new objects.
+## Why Are We Programming?
 
-Suppose I want to calculate the average of the first five positive integers, $\{1, 2, 3, 4, 5\}$. I could directly apply
-the formula for the mean using nothing but basic arithmetic operators.
+Suppose you want to calculate the average of the first five positive integers, $\{1, 2, 3, 4, 5\}$. You could
+directly apply the formula for the mean using nothing but the arithmetic operators you already know.
 
 ```{r}
 (1 + 2 + 3 + 4 + 5) / 5
 ```
 
-Of course, we won't get very far with any real-world data analysis if we need to explicitly write out the formula for
-every single estimate we make. So, we typically call a pre-existing function to do the estimation. The following code
-calls the `mean()` function to calculate the average of the values contained in the numeric vector, $[1, 2, 3, 4, 5]$, 
-that we've created with the `:` operator (which is also a kind of function).
+That works fine for five numbers. But what if you had 500 numbers? Or 5 million? Manually typing out every value and
+dividing by hand simply isn't realistic. This is exactly why we program: so that a computer can do the repetitive,
+error-prone parts of a calculation for us, reliably and instantly, no matter how much data we throw at it.
 
-```{r}
+**Do:** run the code below.
+
+```{webr-r}
 mean(1:5)
 ```
+
+**See:** it prints `3`, the same answer as our hand-calculated formula above.
+
+**Explain:** let's break down exactly what happened in that one short line of code.
+
+- `1:5` creates the sequence of numbers `1, 2, 3, 4, 5`.
+- `mean(...)` takes that sequence and calculates its average.
+
+So `mean(1:5)` reads almost like English: "the mean of one-through-five." Instead of writing out the entire formula
+for a mean every time, we can reuse a small, pre-built piece of code, a **function**, that already knows how to do
+that calculation for us.
+
+::: practice
+
+## Practice: Predict, Then Run
+
+Before running the code below, predict what value each line will produce.
+
+```{r, eval = FALSE}
+1:5
+mean(1:5)
+sum(1:5)
+```
+
+:::: {.panel-tabset}
+## {{< var tab_title.editor >}}
+
+```{webr-r}
+1:5
+mean(1:5)
+sum(1:5)
+```
+
+## {{< var tab_title.solution >}}
+
+```{r}
+1:5
+mean(1:5)
+sum(1:5)
+```
+
+`1:5` just creates the five numbers themselves. Nothing is calculated yet. `mean(1:5)` and `sum(1:5)` both take that
+same sequence of numbers as an input, but each performs a *different* operation on it: one averages the values, and
+the other adds them all together. Same input, different function, different result.
+::::
+
+:::
+
+Over the rest of this tutorial, you'll learn what a function actually *is*, how to call one, how to change what you
+feed into it, and how to avoid (and fix) the most common mistakes people make when they're getting started.
+
+## Quick Check
+
+In your own words: why is it useful to have a function like `mean()` instead of always writing out the full averaging
+formula by hand?

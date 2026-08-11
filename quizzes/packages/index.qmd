@@ -16,7 +16,10 @@ title: "Knowledge Quiz: Add-On Packages"
 #| results: "asis"
 
 exams2forms::exams2forms(
-  file = "install_calls.Rmd",
+  file = list(
+    "install_calls.Rmd",
+    "common_errors.Rmd"
+  ),
   edir = here::here("quizzes", "packages", "questions")
 )
 ```

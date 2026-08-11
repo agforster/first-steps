@@ -16,7 +16,11 @@ title: "Knowledge Quiz: Functions"
 #| results: "asis"
 
 exams2forms::exams2forms(
-  file = "function_calls.Rmd",
+  file = list(
+    "function_calls.Rmd",
+    "arguments.Rmd",
+    "common_mistakes.Rmd"
+  ),
   edir = here::here("quizzes", "functions", "questions")
 )
 ```

@@ -13,6 +13,39 @@ source(here::here("R", "buttons.R"))
 
 Congratulations! You've completed the *First Steps* module!
 
+## Hand-In Assignment
+
+::: practice
+
+## First Steps Capstone Assignment
+
+This assignment draws on everything covered in this module: basic commands, functions, packages, and documentation.
+Complete each step below in your own R session, then submit your work (see "What to Hand In" below).
+
+1. **Basic Commands.** Create an object called `weekly_spend` containing at least five numeric values, representing
+   a week's worth of daily spending (in whatever currency you like). Then create a second object called
+   `over_budget` that uses a logical comparison to check whether the *average* daily spend in `weekly_spend` exceeds
+   20.
+1. **Functions.** Using two *different* built-in functions, calculate (a) the total of `weekly_spend` and (b) the
+   average of `weekly_spend`. Store each result in its own, sensibly-named object.
+1. **Packages.** Install and load the **scales** package. Use the `scales::dollar()` function it provides to format
+   your total from step 2 as currency (e.g., `"$142.50"`).
+1. **Documentation.** Open the help file for one function you have *not* used anywhere in this module (your choice —
+   `sd()`, `median()`, and `range()` are all good candidates, but any function is fine). In a comment in your script,
+   write one sentence explaining what the function does and a plausible reason you might use it.
+
+### What to Hand In
+
+Save all of your commands, in the order you ran them, in a single plain-text or R script file (e.g.
+`yourname_first-steps.R`). Include your comment from step 4 directly in that file. Submit the file however your
+instructor has requested (e.g., LMS upload, email, or shared drive).
+
+A teacher reviewing your submission should be able to read straight through your script and see: the objects you
+created, the functions you called and why, evidence that you installed and loaded a package, and your one-sentence
+explanation of an unfamiliar function.
+
+:::
+
 ## Learning Goals
 
 Now that you've completing this module, you should be able to:

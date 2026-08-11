@@ -1,0 +1,66 @@
+---
+title: "General Rules"
+---
+
+Let's pull everything from this tutorial together into a short, reusable reference.
+
+## General Rules for Calling Functions
+
+1. A function call always follows the pattern `function_name(arguments)`.
+1. Every opening parenthesis needs a matching closing parenthesis.
+1. Function names (and argument names) are case-sensitive: `mean()` and `Mean()` are not the same thing.
+1. Arguments are separated by commas.
+1. You can name arguments (`round(x = 3.14159, digits = 2)`) or rely on their order (`round(3.14159, 2)`), but if you
+   skip a name, the order matters.
+1. Text values must be wrapped in quotes (`"like this"`); object names and numbers are not.
+
+## Putting It All Together
+
+::: practice
+
+## Practice
+
+Using what you've learned across this tutorial, write a single R expression that:
+
+1. Creates a vector of the numbers 4, 8, 15, 16, 23, and 42, called `nums`.
+1. Calculates the mean of `nums`, rounded to 1 decimal place.
+
+:::: {.panel-tabset}
+## {{< var tab_title.editor >}}
+
+```{webr-r}
+```
+
+## {{< var tab_title.hint >}}
+
+You'll need three functions here: one to build the vector, one to average it, and one to round the result. You've used
+all three earlier in this tutorial.
+
+## {{< var tab_title.solution >}}
+
+```{r}
+nums <- c(4, 8, 15, 16, 23, 42)
+round(mean(nums), 1)
+```
+
+Notice that this solution *nests* one function call inside another: `mean(nums)` is calculated first, and its result
+is immediately passed as the input to `round()`. You'll see this pattern constantly once you get comfortable with it.
+::::
+
+:::
+
+::: {.callout-tip}
+
+## Ready to Continue?
+
+You're ready to move on to [Add-On Packages](/tutorials/packages/index.qmd) if you can:
+
+- Explain, in plain language, what a function is and why we use them.
+- Recognize a function call in a line of R code.
+- Call a function with one or more arguments.
+- Identify at least one common mistake that causes a function call to fail, and explain why.
+
+If any of these still feel shaky, revisit the relevant page above, or try the
+[Knowledge Quiz](/quizzes/functions/index.qmd) to pinpoint exactly where to focus.
+
+:::

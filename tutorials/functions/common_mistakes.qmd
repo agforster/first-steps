@@ -1,0 +1,96 @@
+---
+title: "Common Mistakes"
+---
+
+Everyone runs into the same handful of errors when they're getting started with functions. Recognizing them quickly
+will save you a lot of frustration. Each example below is broken on purpose, try to spot the problem *before* reading
+the explanation.
+
+## Mistake 1: Forgetting a Closing Parenthesis
+
+```{r, error = TRUE}
+round(3.14159, 2
+```
+
+**Explain:** every opening parenthesis needs a matching closing parenthesis. R will often show a `+` prompt (instead
+of an error) and appear to "hang" while it waits for you to finish the expression. If that happens, you're almost
+always just missing a closing `)`.
+
+## Mistake 2: Misspelling a Function Name
+
+```{r, error = TRUE}
+maen(1:5)
+```
+
+**Explain:** R is case-sensitive and doesn't guess at typos. `maen()` doesn't exist, so R tells you it "could not find
+function." Double-check your spelling (and capitalization) whenever you see this error.
+
+## Mistake 3: Misnaming an Argument
+
+```{r, error = TRUE}
+round(3.14159, digit = 2)
+```
+
+**Explain:** the `round()` function expects an argument called `digits` (plural), not `digit`. R doesn't recognize
+`digit` as a valid argument name for `round()`, so it raises an error rather than guessing what you meant.
+
+## Mistake 4: Forgetting Quotes Around Text
+
+```{r, error = TRUE}
+x <- hello
+```
+
+**Explain:** without quotation marks, R assumes `hello` is the name of an existing object, and complains that it can't
+find one. To create a piece of text (a *character string*), you must wrap it in quotes: `x <- "hello"`.
+
+::: practice
+
+## Practice: Diagnose the Error
+
+Each line below contains exactly one mistake from the list above (or no mistake at all). Predict what's wrong with
+each one, then check the solution.
+
+```{r, eval = FALSE}
+sum(1, 2, 3
+sqrt(16)
+Round(2.71828, 2)
+mean(x, na.rm = "yes please")
+```
+
+:::: {.panel-tabset}
+## {{< var tab_title.editor >}}
+
+```{webr-r}
+sum(1, 2, 3
+```
+
+```{webr-r}
+Round(2.71828, 2)
+```
+
+## {{< var tab_title.solution >}}
+
+- `sum(1, 2, 3` is missing a closing parenthesis.
+- `sqrt(16)` has no mistake — it runs fine!
+- `Round(2.71828, 2)` misspells `round()` with a capital `R`. R function names are case-sensitive, so `Round` isn't
+  recognized.
+- `mean(x, na.rm = "yes please")` supplies the wrong *type* of value for `na.rm`, which expects `TRUE` or `FALSE`, not
+  a piece of text. We'll cover exactly how you find out what type of value an argument expects once we look at
+  [documentation](/tutorials/help/index.qmd) later in this module.
+::::
+
+:::
+
+## Quick Check
+
+Which of the following would cause an error, and why?
+
+- `Sum(1:5)`
+- `sum(1:5`
+- `sum(1:5)`
+- `sum(nums = 1:5)`
+
+Test each one in the editor to check your reasoning.
+
+```{webr-r}
+```

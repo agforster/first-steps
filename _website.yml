@@ -34,17 +34,26 @@ website:
         text: "Basic Commands"
         contents:
         - href: tutorials/basic_commands/fundamentals.qmd
-        - href: tutorials/basic_commands/mathematical_operators.qmd
+        - href: tutorials/basic_commands/basic_operators.qmd
+        - href: tutorials/basic_commands/order_of_operations.qmd
+        - href: tutorials/basic_commands/extended_operators.qmd
+        - href: tutorials/basic_commands/objects.qmd
         - href: tutorials/basic_commands/logical_comparisons.qmd
+        - href: tutorials/basic_commands/comments.qmd
         - href: tutorials/basic_commands/environments.qmd
+          text: "Environments (optional)"
         - href: quizzes/basic_commands/index.qmd
           text: "Knowledge Quiz"
       - section: tutorials/functions/index.qmd
         text: "Functions"
         contents:
-          - href: tutorials/functions/functions.qmd
+          - href: tutorials/functions/what_is_a_function.qmd
+          - href: tutorials/functions/try_it.qmd
+          - href: tutorials/functions/arguments.qmd
+          - href: tutorials/functions/common_mistakes.qmd
+          - href: tutorials/functions/general_rules.qmd
           - href: quizzes/functions/index.qmd
-            text: "Knoweldge Quiz"
+            text: "Knowledge Quiz"
       - section: tutorials/packages/index.qmd
         text: "Packages"
         contents:
@@ -55,9 +64,10 @@ website:
       - section: tutorials/help/index.qmd
         text: "Documentation"
         contents:
-          - href: tutorials/help/sections.qmd
           - href: tutorials/help/access.qmd
+          - href: tutorials/help/sections.qmd
           - href: tutorials/help/default_arguments.qmd
+          - href: tutorials/help/independent_task.qmd
           - href: quizzes/help/index.qmd
             text: "Knowledge Quiz"
       - href: conclusion.qmd
@@ -68,6 +78,6 @@ website:
     left: |
       [![](/assets/images/UU_logo_2021_EN_BLACK.png){fig-alt="UU" width=200px}](https://uu.nl) 
     right: 
-      - text: "&copy; 2025"
+      - text: "&copy; 2026"
       - href: "https://github.com/open-stat-prog"
         text: Open-Stat-Prog

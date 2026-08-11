@@ -1,0 +1,29 @@
+Question
+========
+Which of the following lines of R code will produce an error when run?
+
+Answerlist
+----------
+* `Sum(1:10)`
+* `sum(1:10`
+* `sum(1:10)`
+* `round(3.14159, digits = 2)`
+* `round(3.14159, digit = 2)`
+
+Solution
+========
+
+Answerlist
+----------
+* Correct: R is case-sensitive, and there is no function called `Sum()` (only `sum()`), so this errors.
+* Correct: the closing parenthesis is missing, so this errors.
+* Incorrect: this is valid, complete R code, so it runs without error.
+* Incorrect: this is valid, complete R code (`digits` is the correct argument name), so it runs without error.
+* Correct: `round()` has no argument called `digit` (it's `digits`), so this errors.
+
+Meta-information
+================
+exname: Common Mistakes
+extype: mchoice
+exsolution: 11001
+exshuffle: TRUE

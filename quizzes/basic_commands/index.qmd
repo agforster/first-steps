@@ -19,7 +19,9 @@ exams2forms::exams2forms(
   file = list(
     "assignment.Rmd",
     "arithmetic.Rmd",
-    "logical.Rmd"
+    "order_of_operations.Rmd",
+    "logical.Rmd",
+    "comments.Rmd"
   ),
   edir = here::here("quizzes", "basic_commands", "questions")
 )

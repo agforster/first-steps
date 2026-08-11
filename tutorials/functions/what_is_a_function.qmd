@@ -1,0 +1,109 @@
+---
+title: "What Is a Function?"
+---
+
+## Functions Are Prebuilt Tools
+
+A **function** is a small, reusable piece of code that someone else has already written for you, packaged up under a
+short name so that you can use it without needing to know (or care) exactly how it works internally.
+
+Think of a function like a kitchen appliance. A blender doesn't require you to understand its motor or wiring. You
+put ingredients in, press a button, and get a smoothie out. R functions work the same way:
+
+1. **Input** — you give the function some data to work with.
+1. **Operation** — the function does something to that data (behind the scenes).
+1. **Output** — the function gives you back a result.
+
+> Input &rarr; **Function** (does the operation) &rarr; Output
+
+## How Functions Are Named
+
+You will almost always be able to quickly identify the functions in a piece of R code by the fixed pattern:
+`FUNCTION_NAME()`. That is, an R function is called by writing the function's name followed immediately by an opening
+parenthesis. The following list shows some commonly encountered R functions.
+
+- `mean()`
+- `sum()`
+- `c()`
+- `round()`
+- `sqrt()`
+
+So, any time you see a word immediately followed by parentheses in R code, you've found a function call.
+
+::: practice
+
+## Practice: Spot the Functions
+
+Which of the following lines contain a function call? Predict your answer, then check it against the solution.
+
+:::: {.panel-tabset}
+## {{< var tab_title.question >}}
+
+```{r, eval = FALSE}
+x <- 7
+y <- sqrt(49)
+z <- x + 2
+w <- round(3.14159, 2)
+```
+
+## {{< var tab_title.solution >}}
+
+- `x <- 7` — **No** function call. Just assignment of a literal number.
+- `y <- sqrt(49)` — **Yes**, `sqrt()` is a function call.
+- `z <- x + 2` — **No** function call. Just arithmetic on an object.
+- `w <- round(3.14159, 2)` — **Yes**, `round()` is a function call.
+::::
+
+:::
+
+## Why This Matters
+
+Almost every useful thing you'll do in R, from simple calculations to complex statistical models, involves calling
+functions. Getting comfortable spotting them, and understanding the input &rarr; operation &rarr; output pattern, is
+the single most important conceptual step in this tutorial. Everything else builds on it.
+
+::: {.callout-note}
+
+## Going Further: Functions as Mathematical Formulas
+
+If you're comfortable with algebra, it can help to know that R functions work in essentially the same way as
+mathematical functions. Feel free to skip this box entirely if it doesn't help you.
+
+The following equation represents a linear function of $x$.
+
+$$
+f(x) = 1.5 + 2x
+$$
+
+For any value of $x$ that we provide as input, $f(x)$ first multiplies that value by 2 and then adds 1.5 to the
+resulting product. So, if we let $x = 3$, we get $f(3) = 7.5$.
+
+$$
+\begin{align*}
+f(3) &= 1.5 + 2 \times 3\\
+&= 7.5
+\end{align*}
+$$
+
+The `mean()` function we used to motivate these ideas operates through the same conceptual process. If we let $n$
+represent the number of values in $x$, we could notate the mathematical definition of the `mean()` function as
+follows.
+
+$$
+\begin{align}
+f(x) = \frac{1}{n}\sum_{i = 1}^{n} x_i
+\end{align}
+$$ {#eq-mean}
+
+Doing the analogous calculation in R would look like the following.
+
+```{r}
+a <- 1:5
+mean(a)
+```
+
+In most of your R analyses, you won't need to worry about *defining* the functions you use: that work has already been
+done by the developers who wrote the packages you're using. You will usually only have to worry about preparing the
+input, calling an appropriate function, and processing the function's output.
+
+:::

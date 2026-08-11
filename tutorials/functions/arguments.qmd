@@ -1,0 +1,100 @@
+---
+title: "Understanding Arguments"
+---
+
+::: {.column-margin}
+
+:::: reading
+
+[R4DS 2.4: Calling Functions](https://r4ds.hadley.nz/workflow-basics.html#calling-functions)
+
+::::
+
+:::
+
+## What Are Arguments?
+
+On the last page, you already changed the inputs to `round()` and saw the output change. Those inputs have a name:
+**arguments**. Arguments are simply the inputs you give to a function, written inside its parentheses.
+
+> `function_name(arguments)`
+
+Most R functions accept more than one argument, and each argument has its own name. You specify argument values by
+writing a comma-separated list of `name = value` pairs between the parentheses of the function call.
+
+```{r}
+round(x = 3.14159, digits = 2)
+```
+
+**Do:** run the two lines of code.
+
+```{webr-r}
+round(x = 3.14159, digits = 2)
+round(3.14159, 2)
+```
+
+**See:** both lines produce the same result.
+
+**Explain:** if you supply argument values *in the order the function expects them*, you don't have to write out the
+argument names. Both `round(x = 3.14159, digits = 2)` and `round(3.14159, 2)` tell R exactly the same thing — the
+second version is just a shortcut.
+
+::: practice
+
+## Practice: Predict, Then Run
+
+The `mean()` function accepts an argument called `trim`, which excludes a proportion of the most extreme values before
+averaging. Predict what each line below will print.
+
+```{r, eval = FALSE}
+x <- c(1, 2, 3, 4, 100)
+mean(x)
+mean(x, trim = 0.2)
+```
+
+:::: {.panel-tabset}
+## {{< var tab_title.editor >}}
+
+```{webr-r}
+x <- c(1, 2, 3, 4, 100)
+mean(x)
+mean(x, trim = 0.2)
+```
+
+## {{< var tab_title.solution >}}
+
+```{r}
+x <- c(1, 2, 3, 4, 100)
+mean(x)
+mean(x, trim = 0.2)
+```
+
+`mean(x)` averages all five values, including the outlier `100`, which pulls the average up substantially. `mean(x,
+trim = 0.2)` first removes the most extreme 20% of values on each end before averaging, giving a result that's much
+closer to the "typical" value in the data.
+::::
+
+:::
+
+## A Note on Named vs. Positional Arguments
+
+You don't always need to write out an argument's name, but if you skip the name, R will assume you're supplying the
+arguments in the order the function expects. Mixing these two styles is common and perfectly fine, as long as you keep
+the ordering rules straight:
+
+- If you name **all** your arguments, you can put them in any order.
+- If you name **none** of your arguments, you must put them in the function's expected order.
+- If you name **some**, the unnamed ones must still come first, in the expected order.
+
+We'll come back to exactly how you find out a function's expected argument order and default values once we cover
+[documentation](/tutorials/help/index.qmd) later in this module. For now, it's enough to recognize that arguments have
+names, and that those names matter.
+
+## Quick Check
+
+- What is an argument?
+- In `round(3.14159, 2)`, which part is the function name, and which part(s) are the arguments?
+- Rewrite `round(3.14159, 2)` using explicit argument names.
+
+```{webr-r}
+```
