@@ -10,6 +10,13 @@ format:
 source(here::here("R", "buttons.R"))
 ```
 
+::: {.callout-tip}
+
+## ⏱ Estimated Time to Complete
+
+**About 120–150 minutes**, including practice exercises and knowledge quizzes.
+
+:::
 Welcome to the *First Steps* module. In this module, you will take the first steps in your R programming journey by
 learning the basics of R usage. The module content is broken into four tutorials:
 

@@ -85,6 +85,19 @@ div.callout-reading.callout-style-default .callout-icon::before, div.callout-rea
   content: '\f518' !important;
   background-image: none;
 }
+div.callout-practice.callout {
+  border-left-color: green;
+}
+div.callout-practice.callout-style-default > .callout-header {
+  background-color: rgb(from green r g b / 13%);
+}
+div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f085' !important;
+  background-image: none;
+}
 div.callout-reading-advanced.callout {
   border-left-color: red;
 }
@@ -109,19 +122,6 @@ div.callout-resource.callout-style-default .callout-icon::before, div.callout-re
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   content: '\f0c1' !important;
-  background-image: none;
-}
-div.callout-practice.callout {
-  border-left-color: green;
-}
-div.callout-practice.callout-style-default > .callout-header {
-  background-color: rgb(from green r g b / 13%);
-}
-div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f085' !important;
   background-image: none;
 }
 </style>
@@ -346,20 +346,26 @@ div.callout-practice.callout-style-default .callout-icon::before, div.callout-pr
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tutorials/help/sections.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Help File Sections</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../tutorials/help/access.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Accessing Help Files</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../tutorials/help/sections.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Help File Sections</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../tutorials/help/default_arguments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Default Function Arguments</span></a>
+ <span class="menu-text">Argument Order &amp; Defaults</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/help/independent_task.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Independent Task</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -428,53 +434,53 @@ Note
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which of the following options represent R function calls?</p>
-<div id="webex-26ceacf818b9d711813a034430bca33c" class="webex-checkboxgroup" data-answer="aQdPVU1SSggdCE4JOQ==">
-<label><input type="checkbox" autocomplete="off" name="26ceacf818b9d711813a034430bca33c"><span><code>mean(x, trim = 0.1, na.rm = TRUE)</code></span></label><label><input type="checkbox" autocomplete="off" name="26ceacf818b9d711813a034430bca33c"><span><code>TRUE</code></span></label><label><input type="checkbox" autocomplete="off" name="26ceacf818b9d711813a034430bca33c"><span><code>rnorm(n = 100)</code></span></label><label><input type="checkbox" autocomplete="off" name="26ceacf818b9d711813a034430bca33c"><span><code>bar</code></span></label><label><input type="checkbox" autocomplete="off" name="26ceacf818b9d711813a034430bca33c"><span><code>Inf</code></span></label><label><input type="checkbox" autocomplete="off" name="26ceacf818b9d711813a034430bca33c"><span><code>NA</code></span></label>
+<div id="webex-a72b760a689f2c34ad608583bdabc983" class="webex-checkboxgroup" data-answer="OgceUhsHHFAaCRVWbw==">
+<label><input type="checkbox" autocomplete="off" name="a72b760a689f2c34ad608583bdabc983"><span><code>3.14159</code></span></label><label><input type="checkbox" autocomplete="off" name="a72b760a689f2c34ad608583bdabc983"><span><code>bar</code></span></label><label><input type="checkbox" autocomplete="off" name="a72b760a689f2c34ad608583bdabc983"><span><code>.libPaths()</code></span></label><label><input type="checkbox" autocomplete="off" name="a72b760a689f2c34ad608583bdabc983"><span><code>rnorm(n = 100)</code></span></label><label><input type="checkbox" autocomplete="off" name="a72b760a689f2c34ad608583bdabc983"><span><code>mean(x, trim = 0.1, na.rm = TRUE)</code></span></label><label><input type="checkbox" autocomplete="off" name="a72b760a689f2c34ad608583bdabc983"><span><code>Inf</code></span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>You can recognize a valid function call by the pattern: <code>FUNCTION_NAME()</code>.</p>
 <ul>
-<li>Correct. This function call would calculate the trimmed mean of <code>x</code>, ignoring any missing values.</li>
-<li>This is a length-one logical vector.</li>
-<li>Correct. This function call would generate 100 random standard normal deviates.</li>
+<li>This is a length-one numeric vector.</li>
 <li>This is a symbol (i.e., the name of an object).</li>
+<li>Correct. This function call will list the library paths where R will install packages on your system.</li>
+<li>Correct. This function call would generate 100 random standard normal deviates.</li>
+<li>Correct. This function call would calculate the trimmed mean of <code>x</code>, ignoring any missing values.</li>
 <li>This is R’s infinite value code.</li>
-<li>This is R’s missing value code.</li>
 </ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which of the following function calls will correctly round the value <code>9.8765</code> to 2 decimal places?</p>
-<div id="webex-c99acc99e8e166dc35093b1d12a3a2d3" class="webex-checkboxgroup" data-answer="OAgVUE9SFQlJCDg=">
-<label><input type="checkbox" autocomplete="off" name="c99acc99e8e166dc35093b1d12a3a2d3"><span><code>round(x = 9.8765, digits = 2)</code></span></label><label><input type="checkbox" autocomplete="off" name="c99acc99e8e166dc35093b1d12a3a2d3"><span><code>round(9.8765, 2)</code></span></label><label><input type="checkbox" autocomplete="off" name="c99acc99e8e166dc35093b1d12a3a2d3"><span><code>round(digits = 2, x = 9.8765)</code></span></label><label><input type="checkbox" autocomplete="off" name="c99acc99e8e166dc35093b1d12a3a2d3"><span><code>round(9.8765, digit = 2)</code></span></label><label><input type="checkbox" autocomplete="off" name="c99acc99e8e166dc35093b1d12a3a2d3"><span><code>round(2, 9.8765)</code></span></label>
+<div id="webex-b9d6696370010320d582a42dc4fa42fc" class="webex-checkboxgroup" data-answer="OQhIBxoJGgMbAW0=">
+<label><input type="checkbox" autocomplete="off" name="b9d6696370010320d582a42dc4fa42fc"><span><code>round(digits = 2, x = 9.8765)</code></span></label><label><input type="checkbox" autocomplete="off" name="b9d6696370010320d582a42dc4fa42fc"><span><code>round(9.8765, 2)</code></span></label><label><input type="checkbox" autocomplete="off" name="b9d6696370010320d582a42dc4fa42fc"><span><code>round(2, 9.8765)</code></span></label><label><input type="checkbox" autocomplete="off" name="b9d6696370010320d582a42dc4fa42fc"><span><code>round(9.8765, digit = 2)</code></span></label><label><input type="checkbox" autocomplete="off" name="b9d6696370010320d582a42dc4fa42fc"><span><code>round(x = 9.8765, digits = 2)</code></span></label>
 </div>
 </div>
 <div class="webex-solution">
 <ul>
-<li>Correct: both arguments are named, so their order doesn’t matter.</li>
-<li>Correct: the arguments are supplied in the order <code>round()</code> expects (<code>x</code>, then <code>digits</code>), so no names are needed.</li>
 <li>Correct: both arguments are named, so their order doesn’t matter, even though it differs from the previous answer.</li>
-<li>Incorrect: <code>round()</code> expects an argument named <code>digits</code>, not <code>digit</code>. R will not recognize this argument name.</li>
+<li>Correct: the arguments are supplied in the order <code>round()</code> expects (<code>x</code>, then <code>digits</code>), so no names are needed.</li>
 <li>Incorrect: without argument names, R matches by position — the first value fills <code>x</code> and the second fills <code>digits</code>. This call rounds <code>2</code> (interpreted as <code>x</code>) to <code>9.8765</code> decimal places, which is a nonsensical number of digits, not the intended calculation.</li>
+<li>Incorrect: <code>round()</code> expects an argument named <code>digits</code>, not <code>digit</code>. R will not recognize this argument name.</li>
+<li>Correct: both arguments are named, so their order doesn’t matter.</li>
 </ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which of the following lines of R code will produce an error when run?</p>
-<div id="webex-b9f695514f403c51253275725798e278" class="webex-checkboxgroup" data-answer="OQhKBhUEGQAYVmk=">
-<label><input type="checkbox" autocomplete="off" name="b9f695514f403c51253275725798e278"><span><code>sum(1:10</code></span></label><label><input type="checkbox" autocomplete="off" name="b9f695514f403c51253275725798e278"><span><code>sum(1:10)</code></span></label><label><input type="checkbox" autocomplete="off" name="b9f695514f403c51253275725798e278"><span><code>Sum(1:10)</code></span></label><label><input type="checkbox" autocomplete="off" name="b9f695514f403c51253275725798e278"><span><code>round(3.14159, digit = 2)</code></span></label><label><input type="checkbox" autocomplete="off" name="b9f695514f403c51253275725798e278"><span><code>round(3.14159, digits = 2)</code></span></label>
+<div id="webex-513cdbbdfd21aff6eee9c7617cf63784" class="webex-checkboxgroup" data-answer="bgAfUkhSTlRKVW8=">
+<label><input type="checkbox" autocomplete="off" name="513cdbbdfd21aff6eee9c7617cf63784"><span><code>Sum(1:10)</code></span></label><label><input type="checkbox" autocomplete="off" name="513cdbbdfd21aff6eee9c7617cf63784"><span><code>round(3.14159, digit = 2)</code></span></label><label><input type="checkbox" autocomplete="off" name="513cdbbdfd21aff6eee9c7617cf63784"><span><code>sum(1:10)</code></span></label><label><input type="checkbox" autocomplete="off" name="513cdbbdfd21aff6eee9c7617cf63784"><span><code>round(3.14159, digits = 2)</code></span></label><label><input type="checkbox" autocomplete="off" name="513cdbbdfd21aff6eee9c7617cf63784"><span><code>sum(1:10</code></span></label>
 </div>
 </div>
 <div class="webex-solution">
 <ul>
-<li>Correct: the closing parenthesis is missing, so this errors.</li>
-<li>Incorrect: this is valid, complete R code, so it runs without error.</li>
 <li>Correct: R is case-sensitive, and there is no function called <code>Sum()</code> (only <code>sum()</code>), so this errors.</li>
 <li>Correct: <code>round()</code> has no argument called <code>digit</code> (it’s <code>digits</code>), so this errors.</li>
+<li>Incorrect: this is valid, complete R code, so it runs without error.</li>
 <li>Incorrect: this is valid, complete R code (<code>digits</code> is the correct argument name), so it runs without error.</li>
+<li>Correct: the closing parenthesis is missing, so this errors.</li>
 </ul>
 </div>
 </div>

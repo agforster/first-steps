@@ -72,17 +72,17 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>
-div.callout-reading-advanced.callout {
-  border-left-color: red;
+div.callout-practice.callout {
+  border-left-color: green;
 }
-div.callout-reading-advanced.callout-style-default > .callout-header {
-  background-color: rgb(from red r g b / 13%);
+div.callout-practice.callout-style-default > .callout-header {
+  background-color: rgb(from green r g b / 13%);
 }
-div.callout-reading-advanced .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-reading-advanced.callout-style-default .callout-icon::before, div.callout-reading-advanced.callout-titled .callout-icon::before {
+div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
-  content: '\f518' !important;
+  content: '\f085' !important;
   background-image: none;
 }
 div.callout-reading.callout {
@@ -98,19 +98,6 @@ div.callout-reading.callout-style-default .callout-icon::before, div.callout-rea
   content: '\f518' !important;
   background-image: none;
 }
-div.callout-practice.callout {
-  border-left-color: green;
-}
-div.callout-practice.callout-style-default > .callout-header {
-  background-color: rgb(from green r g b / 13%);
-}
-div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f085' !important;
-  background-image: none;
-}
 div.callout-resource.callout {
   border-left-color: orange;
 }
@@ -122,6 +109,19 @@ div.callout-resource.callout-style-default .callout-icon::before, div.callout-re
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   content: '\f0c1' !important;
+  background-image: none;
+}
+div.callout-reading-advanced.callout {
+  border-left-color: red;
+}
+div.callout-reading-advanced.callout-style-default > .callout-header {
+  background-color: rgb(from red r g b / 13%);
+}
+div.callout-reading-advanced .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-reading-advanced.callout-style-default .callout-icon::before, div.callout-reading-advanced.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f518' !important;
   background-image: none;
 }
 </style>
@@ -346,20 +346,26 @@ div.callout-resource.callout-style-default .callout-icon::before, div.callout-re
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tutorials/help/sections.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Help File Sections</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../tutorials/help/access.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Accessing Help Files</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../tutorials/help/sections.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Help File Sections</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../tutorials/help/default_arguments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Default Function Arguments</span></a>
+ <span class="menu-text">Argument Order &amp; Defaults</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/help/independent_task.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Independent Task</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -428,56 +434,56 @@ Note
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which of the following commands represents the recommended way to assign the value <code>7</code> to the object <code>y</code>?</p>
-<div id="webex-42e6475b3e3536a68d3d75a20cd1abb5" class="webex-radiogroup" data-answer="bwJJBhgHGVMfVW4=">
-<label><input type="radio" autocomplete="off" name="42e6475b3e3536a68d3d75a20cd1abb5"><span><code>7 -&gt; y</code></span></label><label><input type="radio" autocomplete="off" name="42e6475b3e3536a68d3d75a20cd1abb5"><span><code>y = 7</code></span></label><label><input type="radio" autocomplete="off" name="42e6475b3e3536a68d3d75a20cd1abb5"><span><code>y &lt;- 6</code></span></label><label><input type="radio" autocomplete="off" name="42e6475b3e3536a68d3d75a20cd1abb5"><span><code>y &lt;- 7</code></span></label><label><input type="radio" autocomplete="off" name="42e6475b3e3536a68d3d75a20cd1abb5"><span><code>7 &lt;- y</code></span></label>
+<div id="webex-b3377ee87fd07d178e60f04674351df9" class="webex-radiogroup" data-answer="OQIfBxtVSQgbVjk=">
+<label><input type="radio" autocomplete="off" name="b3377ee87fd07d178e60f04674351df9"><span><code>y &lt;- 7</code></span></label><label><input type="radio" autocomplete="off" name="b3377ee87fd07d178e60f04674351df9"><span><code>7 &lt;- y</code></span></label><label><input type="radio" autocomplete="off" name="b3377ee87fd07d178e60f04674351df9"><span><code>y + 7</code></span></label><label><input type="radio" autocomplete="off" name="b3377ee87fd07d178e60f04674351df9"><span><code>y &lt;- 6</code></span></label><label><input type="radio" autocomplete="off" name="b3377ee87fd07d178e60f04674351df9"><span><code>7 -&gt; y</code></span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Although there are three valid assignment operators: <code>&lt;-</code>, <code>-&gt;</code>, <code>=</code>, only the left-facing arrow is recommended by most style guides.</p>
 <ul>
-<li>This is technically valid assignment, but putting the variable on the right-hand side of the assignment operator is not recommended style.</li>
-<li>While <code>=</code> is a legal assignment operator, using an equals sign for assignment is not recommended style.</li>
-<li>That’s the correct assignment operator, but this command assigns the wrong value.</li>
 <li>Correct</li>
 <li>This isn’t legal R code. This command attempts to assign the value <code>y</code> to the variable <code>7</code>, but variable names can’t begin with numbers.</li>
+<li>This command adds the value of <code>y</code> to the value of <code>7</code> and prints the result.</li>
+<li>That’s the correct assignment operator, but this command assigns the wrong value.</li>
+<li>This is technically valid assignment, but putting the variable on the right-hand side of the assignment operator is not recommended style.</li>
 </ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What value will the following R code produce?</p>
-<p>2 + 4 * 3 - 8</p>
-<p><input class="webex-solveme nospaces" id="webex-1424551e2de3cc512e74263186060d9d" data-tol="0" size="20" data-answer="ahYEFmg="></p>
+<p>(7 - 3) * 4 - 2</p>
+<p><input class="webex-solveme nospaces" id="webex-c7db8b74bc58cf64e776652b3dcf288a" data-tol="0" size="20" data-answer="OBVVVho/"></p>
 </div>
 <div class="webex-solution">
-<p>By applying the appropriate order of operations, we get 6.</p>
+<p>By applying the appropriate order of operations, we get 14.</p>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What value will the following R code produce?</p>
-<p>10 - 2 * 3</p>
-<p><input class="webex-solveme nospaces" id="webex-beadd6f24252ef0400213798ce7a1ed0" data-tol="0" size="20" data-answer="OUdVRjk="></p>
+<p>2 + 3 * 4</p>
+<p><input class="webex-solveme nospaces" id="webex-223faa304e3f8535a8f2a35edc9b9f59" data-tol="0" size="20" data-answer="aRACUkM8"></p>
 </div>
 <div class="webex-solution">
-<p>By applying the appropriate order of operations (parentheses before multiplication/division before addition/subtraction), we get 4.</p>
+<p>By applying the appropriate order of operations (parentheses before multiplication/division before addition/subtraction), we get 14.</p>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which of the following expressions will return <code>TRUE</code>?</p>
-<div id="webex-2be26f8c890181d2ee02e771ac1986d9" class="webex-checkboxgroup" data-answer="aVJJAhpWFFIUCRwBZQ==">
-<label><input type="checkbox" autocomplete="off" name="2be26f8c890181d2ee02e771ac1986d9"><span><code>"alice" == "bob" | "alice" != "alice"</code></span></label><label><input type="checkbox" autocomplete="off" name="2be26f8c890181d2ee02e771ac1986d9"><span><code>FALSE</code></span></label><label><input type="checkbox" autocomplete="off" name="2be26f8c890181d2ee02e771ac1986d9"><span><code>"foo" == "bar"</code></span></label><label><input type="checkbox" autocomplete="off" name="2be26f8c890181d2ee02e771ac1986d9"><span><code>(8 - 1) == 7 &amp; 7 &gt;= (14 / 2)</code></span></label><label><input type="checkbox" autocomplete="off" name="2be26f8c890181d2ee02e771ac1986d9"><span><code>TRUE &amp; FALSE</code></span></label><label><input type="checkbox" autocomplete="off" name="2be26f8c890181d2ee02e771ac1986d9"><span><code>(8 - 1) == 7 &amp; 7 &gt; (14 / 2)</code></span></label>
+<div id="webex-84fc5d54059b83b7b2c296e77d9f5764" class="webex-checkboxgroup" data-answer="YwRKUhlUGQQcBRVSZQ==">
+<label><input type="checkbox" autocomplete="off" name="84fc5d54059b83b7b2c296e77d9f5764"><span><code>"alice" == "bob" | "alice" != "alice"</code></span></label><label><input type="checkbox" autocomplete="off" name="84fc5d54059b83b7b2c296e77d9f5764"><span><code>"alice" == "bob" | "alice" == "alice"</code></span></label><label><input type="checkbox" autocomplete="off" name="84fc5d54059b83b7b2c296e77d9f5764"><span><code>"foo" == "bar"</code></span></label><label><input type="checkbox" autocomplete="off" name="84fc5d54059b83b7b2c296e77d9f5764"><span><code>"alice" == "bob" &amp; "alice" == "alice"</code></span></label><label><input type="checkbox" autocomplete="off" name="84fc5d54059b83b7b2c296e77d9f5764"><span><code>(8 - 1) == 7 &amp; 7 &gt; (14 / 2)</code></span></label><label><input type="checkbox" autocomplete="off" name="84fc5d54059b83b7b2c296e77d9f5764"><span><code>FALSE</code></span></label>
 </div>
 </div>
 <div class="webex-solution">
 <ul>
 <li>FALSE: “alice” is not equal to “bob”, and “alice” is equal to “alice”</li>
-<li>FALSE: Trivially</li>
+<li>TRUE: “alice” is not equal to “bob”, but “alice is equal to”alice”</li>
 <li>FALSE: “foo” is not equal to “bar”</li>
-<li>TRUE: 7 is equal to 7, and 7 is greater than or equal to 7</li>
-<li>FALSE: Trivially</li>
+<li>FALSE: “alice” is not equal to “bob”</li>
 <li>FALSE: 7 is equal to 7, but 7 is not strictly greater than 7</li>
+<li>FALSE: Trivially</li>
 </ul>
 </div>
 </div>
@@ -487,17 +493,17 @@ Note
 <pre><code>5 + 5
 # 5 - 5
 5 * 5</code></pre>
-<div id="webex-c07bfad3a51a68bc27b02cef9f0ba947" class="webex-radiogroup" data-answer="OAAbUkpQSANNBWw=">
-<label><input type="radio" autocomplete="off" name="c07bfad3a51a68bc27b02cef9f0ba947"><span><code>0</code> and <code>25</code></span></label><label><input type="radio" autocomplete="off" name="c07bfad3a51a68bc27b02cef9f0ba947"><span><code>10</code>, <code>0</code>, and <code>25</code></span></label><label><input type="radio" autocomplete="off" name="c07bfad3a51a68bc27b02cef9f0ba947"><span><code>10</code> and <code>25</code></span></label><label><input type="radio" autocomplete="off" name="c07bfad3a51a68bc27b02cef9f0ba947"><span><code>10</code> and <code>0</code></span></label><label><input type="radio" autocomplete="off" name="c07bfad3a51a68bc27b02cef9f0ba947"><span>An error, because the second line is invalid R code</span></label>
+<div id="webex-75c9afc9e1c2dbffe89d489f9a59c203" class="webex-radiogroup" data-answer="bAVPCU1WTwlJAD4=">
+<label><input type="radio" autocomplete="off" name="75c9afc9e1c2dbffe89d489f9a59c203"><span>An error, because the second line is invalid R code</span></label><label><input type="radio" autocomplete="off" name="75c9afc9e1c2dbffe89d489f9a59c203"><span><code>10</code>, <code>0</code>, and <code>25</code></span></label><label><input type="radio" autocomplete="off" name="75c9afc9e1c2dbffe89d489f9a59c203"><span><code>10</code> and <code>0</code></span></label><label><input type="radio" autocomplete="off" name="75c9afc9e1c2dbffe89d489f9a59c203"><span><code>0</code> and <code>25</code></span></label><label><input type="radio" autocomplete="off" name="75c9afc9e1c2dbffe89d489f9a59c203"><span><code>10</code> and <code>25</code></span></label>
 </div>
 </div>
 <div class="webex-solution">
 <ul>
-<li>Incorrect: the first line (<code>5 + 5</code>) is still evaluated and printed.</li>
-<li>Incorrect: the commented line is never evaluated by R, so <code>0</code> is never printed.</li>
-<li>Correct: the line starting with <code>#</code> is a comment and is never evaluated, so R only prints the results of the first and third lines.</li>
-<li>Incorrect: the third line (<code>5 * 5</code>) is still evaluated and printed.</li>
 <li>Incorrect: a <code>#</code> simply marks the rest of the line as a comment; it doesn’t cause an error.</li>
+<li>Incorrect: the commented line is never evaluated by R, so <code>0</code> is never printed.</li>
+<li>Incorrect: the third line (<code>5 * 5</code>) is still evaluated and printed.</li>
+<li>Incorrect: the first line (<code>5 + 5</code>) is still evaluated and printed.</li>
+<li>Correct: the line starting with <code>#</code> is a comment and is never evaluated, so R only prints the results of the first and third lines.</li>
 </ul>
 </div>
 </div>
@@ -936,7 +942,7 @@ Note
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
- © 2025
+ © 2026
   </li>  
     <li class="nav-item">
     <a class="nav-link" href="https://github.com/open-stat-prog">

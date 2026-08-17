@@ -71,19 +71,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>
-div.callout-practice.callout {
-  border-left-color: green;
-}
-div.callout-practice.callout-style-default > .callout-header {
-  background-color: rgb(from green r g b / 13%);
-}
-div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f085' !important;
-  background-image: none;
-}
 div.callout-reading-advanced.callout {
   border-left-color: red;
 }
@@ -108,6 +95,19 @@ div.callout-reading.callout-style-default .callout-icon::before, div.callout-rea
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   content: '\f518' !important;
+  background-image: none;
+}
+div.callout-practice.callout {
+  border-left-color: green;
+}
+div.callout-practice.callout-style-default > .callout-header {
+  background-color: rgb(from green r g b / 13%);
+}
+div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f085' !important;
   background-image: none;
 }
 div.callout-resource.callout {
@@ -418,11 +418,11 @@ div.callout-resource.callout-style-default .callout-icon::before, div.callout-re
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-First Steps Capstone Assignment
+Hand in Assignment
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This assignment draws on everything covered in this module — basic commands, functions, packages, and documentation. Complete each step below in your own R session, then submit your work (see “What to Hand In” below).</p>
+<p>This assignment can be used as part of a course. Through this assignment, you show that you understand everything covered in this module: basic commands, functions, packages, and documentation. Complete each step below in your own R session, then submit your work (see “What to Hand In” below).</p>
 <ol type="1">
 <li><strong>Basic Commands.</strong> Create an object called <code>weekly_spend</code> containing at least five numeric values, representing a week’s worth of daily spending (in whatever currency you like). Then create a second object called <code>over_budget</code> that uses a logical comparison to check whether the <em>average</em> daily spend in <code>weekly_spend</code> exceeds
 <ol start="20" type="1">
@@ -434,7 +434,7 @@ First Steps Capstone Assignment
 </ol>
 <section id="what-to-hand-in" class="level3">
 <h3 class="anchored" data-anchor-id="what-to-hand-in">What to Hand In</h3>
-<p>Save all of your commands, in the order you ran them, in a single plain-text or R script file (e.g. <code>yourname_first-steps.R</code>). Include your comment from step 4 directly in that file. Submit the file however your instructor has requested (e.g., LMS upload, email, or shared drive).</p>
+<p>Save all of your commands, in the order you ran them, in a single plain-text or R script file (e.g. <code>yourname_first-steps.R</code>). Include your comment from step 4 directly in that file.</p>
 <p>A teacher reviewing your submission should be able to read straight through your script and see: the objects you created, the functions you called and why, evidence that you installed and loaded a package, and your one-sentence explanation of an unfamiliar function.</p>
 </section>
 </div>

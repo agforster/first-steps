@@ -2291,7 +2291,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </header>
 
 
-<p>Once you’ve installed a package, you’re nearly ready to use its functions — but there’s still one step left: you must <em>load</em> the package into your active R session.</p>
+<p>Once you’ve installed a package, you’re nearly ready to use its functions, but there’s still one step left: you must <em>load</em> the package into your active R session.</p>
 <p>The following code produces an error because we’re trying to use the <code>ggplot()</code>, <code>aes()</code>, and <code>geom_boxplot()</code> functions provided by the <strong>ggplot2</strong> package, without having loaded that package first.</p>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris, <span class="fu">aes</span>(Species, Petal.Length)) <span class="sc">+</span> <span class="fu">geom_boxplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -2315,8 +2315,8 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <section id="common-errors" class="level2">
 <h2 class="anchored" data-anchor-id="common-errors">Common Errors</h2>
 <ul>
-<li><strong>Using a package’s functions before loading it.</strong> This is exactly the error you saw at the top of this page — it’s the single most common package-related mistake. If R tells you it “could not find function,” check whether you’ve loaded the package that provides it.</li>
-<li><strong>Trying to load a package you haven’t installed.</strong> <code>library()</code> will error with something like “there is no package called…” if the package isn’t installed yet. Installing and loading are two separate steps — you need to install a package (once) before you can ever load it.</li>
+<li><strong>Using a package’s functions before loading it.</strong> This is exactly the error you saw at the top of this page. It’s the single most common package-related mistake. If R tells you it “could not find function,” check whether you’ve loaded the package that provides it.</li>
+<li><strong>Trying to load a package you haven’t installed.</strong> <code>library()</code> will error with something like “there is no package called…” if the package isn’t installed yet. Installing and loading are two separate steps. You need to install a package (once) before you can ever load it.</li>
 <li><strong>Misspelling or mis-capitalizing the package name.</strong> Package names are case-sensitive, just like function names. <code>library(Dplyr)</code> will fail even though <code>library(dplyr)</code> works fine.</li>
 </ul>
 </section>

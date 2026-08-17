@@ -2305,7 +2305,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <h2 class="anchored" data-anchor-id="common-errors">Common Errors</h2>
 <p>A few things commonly trip people up the first time they install a package:</p>
 <ul>
-<li><strong>Misspelling the package name.</strong> <code>install.packages("ggplot")</code> (missing the <code>2</code>) will fail, because the package is actually called <code>ggplot2</code>. R can’t guess what you meant — double-check the spelling against the package’s documentation or CRAN page.</li>
+<li><strong>Misspelling the package name.</strong> <code>install.packages("ggplot")</code> (missing the <code>2</code>) will fail, because the package is actually called <code>ggplot2</code>. R can’t guess what you meant, so double-check the spelling against the package’s documentation or CRAN page.</li>
 <li><strong>Forgetting the quotes.</strong> <code>install.packages(psych)</code> (without quotes) tells R to look for an <em>object</em> called <code>psych</code>, not a package name, and will produce an error. Package names passed to <code>install.packages()</code> must be character strings, wrapped in quotes.</li>
 <li><strong>No internet connection.</strong> <code>install.packages()</code> needs to download the package, so it will fail (often with a fairly cryptic error) if you’re offline.</li>
 </ul>
@@ -2351,8 +2351,8 @@ Optional / Going Further: Repositories, Development Versions, and Library Locati
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Everything above covers what you need for day-to-day work. This box covers a few more advanced topics you can safely skip for now and come back to later if you ever need them.</p>
-<p><strong>Where packages come from.</strong> By default, <code>install.packages()</code> downloads packages from the <em>Comprehensive R Archive Network</em> (CRAN) — a global network of servers (“mirrors”) that each host a complete copy of all published R packages. RStudio automatically picks a sensible default mirror, so you don’t normally need to specify one. If you ever want to set one explicitly, you can do so via the <code>repos</code> argument.</p>
+<p>Everything above covers what you need for day-to-day work. This box covers a few more advanced topics you can come back to later if you ever need them.</p>
+<p><strong>Where packages come from.</strong> By default, <code>install.packages()</code> downloads packages from the <em>Comprehensive R Archive Network</em> (CRAN). This is a global network of servers (“mirrors”) that each host a complete copy of all published R packages.RStudio automatically picks a sensible default mirror, so you don’t normally need to specify one. If you ever want to set one explicitly, you can do so via the <code>repos</code> argument.</p>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Explicitly specify a CRAN mirror</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"lattice"</span>, <span class="st">"gridExtra"</span>), <span class="at">repos =</span> <span class="st">"https://cloud.r-project.org"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>

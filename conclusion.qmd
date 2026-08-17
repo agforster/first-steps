@@ -17,9 +17,9 @@ Congratulations! You've completed the *First Steps* module!
 
 ::: practice
 
-## First Steps Capstone Assignment
+## Hand in Assignment
 
-This assignment draws on everything covered in this module: basic commands, functions, packages, and documentation.
+This assignment can be used as part of a course. Through this assignment, you show that you understand everything covered in this module: basic commands, functions, packages, and documentation.
 Complete each step below in your own R session, then submit your work (see "What to Hand In" below).
 
 1. **Basic Commands.** Create an object called `weekly_spend` containing at least five numeric values, representing
@@ -37,8 +37,7 @@ Complete each step below in your own R session, then submit your work (see "What
 ### What to Hand In
 
 Save all of your commands, in the order you ran them, in a single plain-text or R script file (e.g.
-`yourname_first-steps.R`). Include your comment from step 4 directly in that file. Submit the file however your
-instructor has requested (e.g., LMS upload, email, or shared drive).
+`yourname_first-steps.R`). Include your comment from step 4 directly in that file.
 
 A teacher reviewing your submission should be able to read straight through your script and see: the objects you
 created, the functions you called and why, evidence that you installed and loaded a package, and your one-sentence
